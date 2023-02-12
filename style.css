@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.outer-box{
+    background-color: #2980b9;
+    height: 50vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-box{
+    height: 40vh;
+    width: 80%;
+    background-color: #bdc3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+}
+.fa-quote-left{
+    font-size: 2rem;
+}
+.text-area{
+    position: absolute;
+    top: 20px;
+    margin: 20px;
+}
+#quote{
+    text-align: left;
+    margin: 20px 0px;
+    font-family: 'Lobster', cursive;
+}
+#author{
+    font-size: 1rem;
+    text-align: right;
+}
+.btn-area{
+    position: absolute;
+    bottom: 20px;
+}
+#quote-btn{
+    width: 200px;
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+#tweet-btn{
+    width: 200px;
+    padding: 10px 0px;
+    font-size: 1rem;
+    color: #2980b9;
+}
+.btn:hover{
+    background-color: #34495e;
+    color: white;
+    cursor: pointer;
+}
+.fa-twitter{
+    animation: rot 1s 1 alternate;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 1380px) {
+    .outer-box{
+        height: 60vh;
+        width: 60%;
+    }
+    .inner-box{
+        height: 50vh;
+        width: 80%;
+    }
+    .btn-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #quote-btn {
+        width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .outer-box{
+        height: 60vh;
+        width: 90%;
+    }
+    .inner-box{
+        height: 50vh;
+        width: 90%;
+    }
+}
