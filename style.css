@@ -100,11 +100,11 @@ body{
 }
 @media (max-width: 550px) {
     .outer-box{
-        height: 60vh;
+        height: 70vh;
         width: 90%;
     }
     .inner-box{
-        height: 50vh;
+        height: 60vh;
         width: 90%;
     }
 }
